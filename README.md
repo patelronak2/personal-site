@@ -1,4 +1,4 @@
-# ronak
+# Ronak - Personal Website
 
 ## Project setup
 ```

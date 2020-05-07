@@ -1,32 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <v-app>
+    <Navbar />
+    <v-content class="blue lighten-5">
+      <v-container fluid>
+        <transition name="fade">
+          <router-view></router-view>
+        </transition>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
+<script>
+import Navbar from "./components/Navbar";
+export default {
+  name: "App",
+  components: {
+    Navbar
+  }
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap");
+body {
+  font-family: "Roboto Slab", serif;
 }
-
-#nav {
-  padding: 30px;
+.fade-enter-active {
+  /* transition: opacity 0.5s; */
+  transition: all 0.5s;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.fade-enter {
+  /* opacity: 0; */
+  transform: translateX(80%);
 }
 </style>
