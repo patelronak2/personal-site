@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about">
     <kinesis-container>
       <kinesis-element :strength="10">
         <Pageheading normal="About" coloured="Me" />
@@ -8,7 +8,7 @@
         </div>
 
         <v-row no-gutters class="my-6">
-          <v-col cols="12" md="6" class="d-flex justify-end px-6">
+          <v-col cols="12" md="6" class="d-none d-md-flex justify-end px-6">
             <Imagecontainer
               :styles="imgStyles"
               :path="imgPath"
@@ -85,3 +85,27 @@ export default {
   }
 };
 </script>
+<style scoped>
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .about {
+    margin: -10px 0 0 -10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+</style>

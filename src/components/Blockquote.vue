@@ -21,3 +21,18 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+/* Medium devices (landscape tablets, 768px) */
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  p {
+    font-size: 24px !important;
+  }
+}
+</style>
