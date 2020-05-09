@@ -1,7 +1,12 @@
 <template>
   <div>
     <v-card :style="styles">
-      <v-img :src="path" :width="imgWidth" aspect-ratio="1">
+      <v-img
+        :src="path"
+        :width="imgWidth"
+        aspect-ratio="1"
+        class="grey lighten-2"
+      >
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular
