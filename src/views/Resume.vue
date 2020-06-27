@@ -1,51 +1,54 @@
 <template>
-  <div>
-    <Pageheading normal="My" coloured="Resume" />
-    <v-container>
-      <v-row no-gutters class="my-6">
-        <v-col cols="12" md="6">
-          <Underlined heading-text="Experience" />
-          <Experienceandprojectcontainer
-            :items="experiences"
-            v-on:read-more="readmore"
-          />
-        </v-col>
-        <v-col cols="12" md="6">
-          <Underlined heading-text="Projects" />
-          <Experienceandprojectcontainer
-            :items="projects"
-            v-on:read-more="readmore"
-          />
-        </v-col>
-      </v-row>
-      <pageheading normal="My" coloured="Skills" />
-      <v-row no-gutters class="my-6">
-        <v-col cols="12" md="4">
-          <Skillscomponent
-            :technologies="frontendTechnologies"
-            title="Client Side Technologies"
-          />
-        </v-col>
-        <v-col cols="12" md="4"
-          ><Skillscomponent
-            :technologies="backendTechnologies"
-            title="Server Side Technologies"
-          />
-        </v-col>
-        <v-col cols="12" md="4"
-          ><Skillscomponent
-            :technologies="databaseTechnologies"
-            title="Database Technologies"
-          />
-        </v-col>
-      </v-row>
-    </v-container>
+  <v-container fluid>
+    <v-row>
+      <v-col cols="12" sm="10" offset-sm="1">
+        <Pageheading normal="My" coloured="Resume" />
+        <v-row no-gutters class="my-6">
+          <v-col cols="12" md="6">
+            <Underlined heading-text="Experience" />
+            <Experienceandprojectcontainer
+              :items="experiences"
+              v-on:read-more="readmore"
+            />
+          </v-col>
+          <v-col cols="12" md="6">
+            <Underlined heading-text="Projects" />
+            <Experienceandprojectcontainer
+              :items="projects"
+              v-on:read-more="readmore"
+            />
+          </v-col>
+        </v-row>
+        <pageheading normal="My" coloured="Skills" />
+        <v-row no-gutters class="my-6">
+          <v-col cols="12" md="4">
+            <Skillscomponent
+              :technologies="frontendTechnologies"
+              title="Client Side Technologies"
+            />
+          </v-col>
+          <v-col cols="12" md="4"
+            ><Skillscomponent
+              :technologies="backendTechnologies"
+              title="Server Side Technologies"
+            />
+          </v-col>
+          <v-col cols="12" md="4"
+            ><Skillscomponent
+              :technologies="databaseTechnologies"
+              title="Database Technologies"
+            />
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+
     <Readmoredialog
       :dialog-data="dialogData"
       :dialog="dialog"
       v-on:closemodal="dialog = !dialog"
     />
-  </div>
+  </v-container>
 </template>
 <script>
 import Pageheading from "@/components/Pageheading";

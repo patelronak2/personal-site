@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <kinesis-element :strength="10" type="depth_inv" class="square-container">
+  <div class="d-none d-lg-flex">
+    <kinesis-element :strength="5" type="depth_inv" class="square-container">
       <div
         class="square"
         :style="{ border: '5px solid #b3e5fc', transform: 'rotate(15deg)' }"

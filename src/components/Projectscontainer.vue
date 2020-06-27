@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <transition-group name="list" tag="div" class="row">
+    <transition-group name="list-complete" tag="div" class="row">
       <v-col
         v-for="project in fileterdProjects"
         :key="project.id"
@@ -65,7 +65,9 @@
                   ></v-progress-circular>
                 </v-row>
               </template>
-              <v-card-title v-text="project.type"></v-card-title>
+              <v-card-text>
+                <div class="title">{{ project.name }}</div>
+              </v-card-text>
             </v-img>
           </v-card>
         </v-hover>
@@ -83,21 +85,6 @@ export default {
 </script>
 
 <style scoped>
-.list-enter {
-  transform: scaleX(0.6);
-  transition: all 0.5s;
-}
-.list-leave-to {
-  opacity: 0;
-  transform: scaleY(0.4);
-}
-.list-leave-active {
-  position: absolute;
-}
-
-.list-move {
-  transition: transform 1s;
-}
 .v-card--reveal {
   align-items: center;
   bottom: 0;
@@ -105,5 +92,21 @@ export default {
   opacity: 0.7;
   position: absolute;
   width: 100%;
+}
+
+.list-complete-item {
+  transition: all 1s;
+}
+.list-complete-enter, .list-complete-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  /* transform: translateY(30px); */
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-complete-leave-active {
+  position: absolute;
+}
+.list-complete-move {
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 </style>

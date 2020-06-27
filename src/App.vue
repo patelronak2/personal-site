@@ -1,37 +1,37 @@
 <template>
   <v-app>
-    <Navbar />
-    <v-content class="blue lighten-5">
-      <v-container fluid>
-        <transition name="fade">
-          <router-view></router-view>
-        </transition>
-      </v-container>
-    </v-content>
+    <transition name="fade" mode="out-in">
+      <component :is="layout"></component>
+    </transition>
   </v-app>
 </template>
 
 <script>
-import Navbar from "./components/Navbar";
+import Default from "@/layouts/Default";
+import App from "@/layouts/App";
 export default {
   name: "App",
   components: {
-    Navbar
+    "default-layout": Default,
+    "new-layout": App
+  },
+  computed: {
+    layout() {
+      return "new-layout";
+    }
   }
 };
 </script>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
 
-<style>
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap");
-body {
-  font-family: "Roboto Slab", serif;
-}
-.fade-enter-active {
-  /* transition: opacity 0.5s; */
-  transition: all 0.5s;
-}
-.fade-enter {
-  /* opacity: 0; */
-  transform: translateX(80%);
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

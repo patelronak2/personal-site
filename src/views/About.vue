@@ -1,59 +1,63 @@
 <template>
-  <div class="about">
-    <kinesis-container>
-      <kinesis-element :strength="10">
-        <Pageheading normal="About" coloured="Me" />
-        <div class="d-flex justify-center">
-          <Blockquote :quote="quote" :quote-author="quoteAuthor" />
-        </div>
+  <v-container fluid>
+    <v-row>
+      <v-col cols="12">
+        <kinesis-container>
+          <kinesis-element :strength="10">
+            <Pageheading normal="About" coloured="Me" />
+            <div class="d-flex justify-center">
+              <Blockquote :quote="quote" :quote-author="quoteAuthor" />
+            </div>
 
-        <v-row no-gutters class="my-6">
-          <v-col cols="12" md="6" class="d-none d-md-flex justify-end px-6">
-            <Imagecontainer
-              :styles="imgStyles"
-              :path="imgPath"
-              :img-width="imgSize"
-            />
-          </v-col>
-          <v-col cols="12" md="6" class="pa-6">
-            <div class="headline font-weight-bold text-uppercase">
-              Ronak Patel
-            </div>
-            <div class="title font-weight-regular">
-              <span class="indigo--text text--darken-4">Full Stack</span>
-              Web Developer based in
-              <span class="indigo--text text--darken-4">Canada</span>
-            </div>
-            <div class="my-6">
-              <p>
-                <span class="font-weight-bold">Degree:</span>
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <span v-on="on"> CST</span>
-                  </template>
-                  <span>Comupter Systems Technology</span>
-                </v-tooltip>
-                - Software Development
-              </p>
-              <p>
-                <span class="font-weight-bold">College:</span>
-                Mohawk College
-              </p>
-              <p>
-                <span class="font-weight-bold">City:</span>
-                Hamilton, ON
-              </p>
-              <p>
-                <span class="font-weight-bold">Email:</span>
-                patelronak2@hotmail.com
-              </p>
-              <Socialmedia label="Social Media:" />
-            </div>
-          </v-col>
-        </v-row>
-      </kinesis-element>
-    </kinesis-container>
-  </div>
+            <v-row>
+              <v-col cols="12" md="6" class="d-none d-md-flex justify-end px-6">
+                <Imagecontainer
+                  :styles="imgStyles"
+                  :path="imgPath"
+                  :img-width="imgSize"
+                />
+              </v-col>
+              <v-col cols="12" md="6" class="pa-6">
+                <div class="headline font-weight-bold text-uppercase">
+                  Ronak Patel
+                </div>
+                <div class="title font-weight-regular">
+                  <span class="indigo--text text--darken-4">Full Stack</span>
+                  Web Developer based in
+                  <span class="indigo--text text--darken-4">Canada</span>
+                </div>
+                <div class="my-6">
+                  <p>
+                    <span class="font-weight-bold">Degree:</span>
+                    <v-tooltip bottom>
+                      <template v-slot:activator="{ on }">
+                        <span v-on="on"> CST</span>
+                      </template>
+                      <span>Comupter Systems Technology</span>
+                    </v-tooltip>
+                    - Software Development
+                  </p>
+                  <p>
+                    <span class="font-weight-bold">College:</span>
+                    Mohawk College
+                  </p>
+                  <p>
+                    <span class="font-weight-bold">City:</span>
+                    Hamilton, ON
+                  </p>
+                  <p>
+                    <span class="font-weight-bold">Email:</span>
+                    patelronak2@hotmail.com
+                  </p>
+                  <Socialmedia label="Social Media:" />
+                </div>
+              </v-col>
+            </v-row>
+          </kinesis-element>
+        </kinesis-container>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <script>
 import Blockquote from "@/components/Blockquote";

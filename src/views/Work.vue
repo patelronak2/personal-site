@@ -37,7 +37,7 @@
       </div>
     </div>
     <v-row>
-      <v-col cols="12" sm="8" offset-sm="2">
+      <v-col cols="12" sm="10" offset-sm="1">
         <Projectscontainer
           :fileterd-projects="fileterdProjects"
           v-on:more-info="moreinfo"

@@ -1,16 +1,14 @@
 <template>
-  <v-container fluid v-resize="onResize">
+  <v-container fluid v-resize="onResize" class="fill-height">
     <kinesis-container>
-      <div class="d-none d-lg-flex">
-        <Animated />
-      </div>
-      <v-row no-gutters class="flex-md-row-reverse">
+      <Animated />
+      <v-row class="flex-md-row-reverse">
         <v-col
           cols="12"
           lg="6"
           class="d-flex align-center justify-center justify-lg-start ma-2"
         >
-          <kinesis-element :strength="10" type="depth_inv" :originX="0">
+          <kinesis-element :strength="5" type="depth_inv" :originX="0">
             <Imagecontainer
               :styles="imgStyles"
               :path="imgPath"
@@ -20,7 +18,7 @@
         </v-col>
         <v-col lg="5" offset-md="1" class="d-flex align-center ma-2">
           <div class="text-container">
-            <kinesis-element :strength="10">
+            <kinesis-element :strength="5">
               <div class="display-2 font-weight-bold py-3">{{ heading1 }}</div>
               <vue-typed-js
                 :strings="['Reader', 'Thinker', 'Web Developer^2000 ']"

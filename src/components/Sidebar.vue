@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: "Sidebar",
   data() {
     return {
       drawer: true,
