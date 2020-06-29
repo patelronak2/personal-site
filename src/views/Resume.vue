@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" sm="10" offset-sm="1">
         <Pageheading normal="My" coloured="Resume" />
-        <v-row no-gutters class="my-6">
+        <v-row class="my-6">
           <v-col cols="12" md="6">
             <Underlined heading-text="Experience" />
             <Experienceandprojectcontainer
@@ -118,14 +118,14 @@ export default {
       projects: [
         {
           type: "project",
-          title: "Payment Processing with Stripe",
-          toFrom: "October 2019",
+          title: "Digital Yearbook",
+          toFrom: "May 2020 - June 2020",
           details:
-            "Created this project as a part of academic requirements. This project boosted my interest in api integration which helped me in succeeding at my workplace",
-          id: 1,
+            "Created this project as a favor to my highschool buddies. I created two seprate project (backend api and front-end SPA) and inegrated them to make an online portal named 'Digital Yearbook'.",
+          id: 0,
           duties: [
-            "A subscription app using Stripe that allows customer to create/manage subscriptions, and an administrator to manage subscriptions of all customer.",
-            "This project exposed me to technologies like Express, Twilio, Mustache, Stripe Elements"
+            "An online portal to keep the keep records and allow interactions who graduated high school with me in 2016",
+            "challenges included maintaining state and protecting routes"
           ],
           borderColor: "#FF6D00"
         },
@@ -142,6 +142,19 @@ export default {
             "Challenges included security and implementing notification features"
           ],
           borderColor: "#00BFA5"
+        },
+        {
+          type: "project",
+          title: "Payment Processing with Stripe",
+          toFrom: "October 2019",
+          details:
+            "Created this project as a part of academic requirements. This project boosted my interest in api integration which helped me in succeeding at my workplace",
+          id: 1,
+          duties: [
+            "A subscription app using Stripe that allows customer to create/manage subscriptions, and an administrator to manage subscriptions of all customer.",
+            "This project exposed me to technologies like Express, Twilio, Mustache, Stripe Elements"
+          ],
+          borderColor: "#FF6D00"
         }
       ],
       frontendTechnologies: [

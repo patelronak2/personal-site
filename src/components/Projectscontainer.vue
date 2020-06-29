@@ -19,9 +19,7 @@
             }"
           >
             <v-img
-              :src="
-                `https://picsum.photos/500/300?image=${project.id * 5 + 10}`
-              "
+              :src="project.image"
               :lazy-src="
                 `https://picsum.photos/10/6?image=${project.id * 5 + 10}`
               "

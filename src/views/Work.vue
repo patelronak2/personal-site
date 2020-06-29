@@ -73,6 +73,28 @@ export default {
         {
           type: "Web Application",
           id: 0,
+          image: require("@/assets/digitalyearbook.png"),
+          name: "Digital Yearbook",
+          description: [
+            "An online portal to keep the keep records and allow interactions who graduated high school with me in 2016. This web-application is the result of two seprate projects (backend api with node and SPA with Vue)."
+          ],
+          technologies: [
+            "Vue, Vuex, Vue-router, Vuetify, Leaflet",
+            "Node, Express",
+            "MongoDB",
+            "Twilio, JWT"
+          ],
+
+          links: {
+            github: "",
+            projectlink: "https://batchof2016.netlify.app/",
+            youTube: ""
+          }
+        },
+        {
+          type: "Web Application",
+          id: 1,
+          image: require("@/assets/trackbooks.png"),
           name: "Track Books",
           description: [
             "A social media platform for book lovers to keep track of their reading list. Features include notification system, friend-requests, ratings, reviews, shelfs and more."
@@ -93,7 +115,8 @@ export default {
         },
         {
           type: "SPA",
-          id: 1,
+          id: 2,
+          image: require("@/assets/personalwebsite.png"),
           name: "Personal Website",
           description: [
             "A single page application as a personal site to showcase personal details, portfolio, Resume. Added transitions and animations provides a great UX experience."
@@ -102,12 +125,13 @@ export default {
 
           links: {
             github: "https://github.com/patelronak2",
-            projectlink: "https://github.com/patelronak2"
+            projectlink: "https://ronakjpatel.com"
           }
         },
         {
           type: "Web Application",
-          id: 2,
+          id: 3,
+          image: require("@/assets/livemusic.jpg"),
           name: "Live Music Venue Finder",
           description: [
             "An online portal that provides information about all the places in hamilton that have live music."
@@ -127,7 +151,8 @@ export default {
         },
         {
           type: "Restful Api",
-          id: 3,
+          id: 4,
+          image: require("@/assets/hamilton.jpg"),
           name: "Hamilton Data API",
           description: [
             "Contains public sector Data made available under the City of Hamilton’s Open Data Licence.",
@@ -144,8 +169,9 @@ export default {
         },
         {
           type: "Restful Api",
-          id: 4,
-          name: "API With Node Js",
+          id: 5,
+          image: require("@/assets/nodejs.jpg"),
+          name: "Basic API With Node Js",
           description: [
             "1.REST API with NodeJS",
             "2.SQLite database to read, create, modify and delete entries",
@@ -160,7 +186,8 @@ export default {
         },
         {
           type: "Web Application",
-          id: 5,
+          id: 6,
+          image: require("@/assets/stripe.jpg"),
           name: "Payment Processing with Stripe",
           description: [
             "1.REST API with NodeJS",
