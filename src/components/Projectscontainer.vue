@@ -38,7 +38,8 @@
                     <v-btn
                       icon
                       class="ma-2"
-                      :href="project.github"
+                      v-if="project.links.github"
+                      :href="project.links.github"
                       target="_blank"
                     >
                       <v-icon large color="indigo darken-4">mdi-github</v-icon>

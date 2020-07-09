@@ -124,7 +124,7 @@ export default {
           technologies: ["Vue, Vue-router", "Vuetify, Material Design"],
 
           links: {
-            github: "https://github.com/patelronak2",
+            github: "https://github.com/patelronak2/personal-site",
             projectlink: "https://ronakjpatel.com"
           }
         },
