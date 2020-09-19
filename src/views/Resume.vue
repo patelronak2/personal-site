@@ -73,6 +73,19 @@ export default {
       experiences: [
         {
           type: "experience",
+          title: "Web Developer, Richmond Assets and Holdings",
+          toFrom: "August 2020 - Present",
+          details:
+            "Working with a team to develop custom web applications using PHP, Vue, Vuetify and MySQL.",
+          duties: [
+            "Developed app integration with APIs for payment processing",
+            "Developing online portal for a program called 'fundamentals of entrepreneurship"
+          ],
+          id: 1,
+          borderColor: "#FF6D00"
+        },
+        {
+          type: "experience",
           title: "Web Developer, Mohawk College",
           toFrom: "October 2019 - April 2020",
           details:
@@ -83,8 +96,8 @@ export default {
             "Managed, optimized and updated PHP databases to track the user’s responses and resuming a session",
             "Successfully created and integrated a staff portal giving the web-application a multi-tier architecture "
           ],
-          id: 1,
-          borderColor: "#FF6D00"
+          id: 2,
+          borderColor: "#00BFA5"
         },
         {
           type: "experience",
@@ -92,13 +105,13 @@ export default {
           toFrom: "January 2018 - August 2018",
           details:
             "My work experience at Industry Education Council of Hamilton has helped me in developing my soft skills, adjusting into office environment and importance of being team-player.",
-          id: 2,
+          id: 3,
           duties: [
             "Developed a web-based interactive tool for HCC students to explore the top 12 local careers in tech",
             "Successfully used WordPress to redesign the company’s website, changed website’s platform and managed/updated databases. Increased site customization by installing Key plugins",
             "Facilitated the delivery of Hamilton Code Clubs (HCC) to more than 10 elementary schools. Developed small modules on ‘Scratch’ to demonstrate working examples using basic programming concepts"
           ],
-          borderColor: "#00BFA5"
+          borderColor: "#AEEA00"
         },
         {
           type: "experience",
@@ -106,13 +119,13 @@ export default {
           toFrom: "May 2018 - August 2018",
           details:
             "Provided academic assistance for students through Codify Zone Summer Camp Program. Becoming a tutor helped me in gaining valuable interpersonal, communication, and listening skills.",
-          id: 3,
+          id: 4,
           duties: [
             "Educated students in basic programming concepts using online resources",
             "Encouraged students to come up with exciting ideas for their projects and helped them finishing it",
             "Helped students discovering preferred learning styles by observing their approach to new projects"
           ],
-          borderColor: "#AEEA00"
+          borderColor: "#FF6D00"
         }
       ],
       projects: [
@@ -154,7 +167,7 @@ export default {
             "A subscription app using Stripe that allows customer to create/manage subscriptions, and an administrator to manage subscriptions of all customer.",
             "This project exposed me to technologies like Express, Twilio, Mustache, Stripe Elements"
           ],
-          borderColor: "#FF6D00"
+          borderColor: "#AEEA00"
         }
       ],
       frontendTechnologies: [

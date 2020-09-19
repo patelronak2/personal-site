@@ -3,11 +3,7 @@
     <kinesis-container>
       <Animated />
       <v-row class="flex-md-row-reverse">
-        <v-col
-          cols="12"
-          lg="6"
-          class="d-flex align-center justify-center justify-lg-start ma-2"
-        >
+        <v-col cols="12" lg="6" class="d-flex align-center justify-center ma-2">
           <kinesis-element :strength="5" type="depth_inv" :originX="0">
             <Imagecontainer
               :styles="imgStyles"
