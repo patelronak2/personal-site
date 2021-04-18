@@ -17,7 +17,7 @@
             <kinesis-element :strength="5">
               <div class="display-2 font-weight-bold py-3">{{ heading1 }}</div>
               <vue-typed-js
-                :strings="['Reader', 'Thinker', 'Web Developer^2000 ']"
+                :strings="['Self learner', 'Troubleshooter', 'Developer^2000 ']"
                 :loop="true"
                 :typeSpeed="100"
                 :backSpeed="50"

@@ -73,7 +73,7 @@ export default {
       experiences: [
         {
           type: "experience",
-          title: "Web Developer, Richmond Assets and Holdings",
+          title: "Full Stack Developer, Richmond Assets and Holdings",
           toFrom: "August 2020 - Present",
           details:
             "Working with a team to develop custom web applications using PHP, Vue, Vuetify and MySQL.",
